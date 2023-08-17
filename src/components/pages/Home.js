@@ -69,6 +69,7 @@ const Home = () => (
                     <FaTwitter className="iconSize" />
                   </Nav.Link>
                 </Tippy>
+
               </div>
             </div>
           </div>
