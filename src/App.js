@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './home/Home';
-import RecentWork from './RecentWork';
-import Contact from './Contact';
-import About from './About';
-import NavBar from './navbar/NavBar';
+import Home from './components/pages/Home';
+import RecentWork from './components/pages/RecentWork';
+import Contact from './components/pages/Contact';
+import About from './components/pages/About';
+import NavBar from './components/NavBar';
 
 const App = () => (
   <main className="mainContainer">
