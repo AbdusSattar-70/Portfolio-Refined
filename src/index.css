@@ -293,3 +293,8 @@
   padding: 5px;
   font-size: 16px;
 }
+
+.custom-photo {
+  height: auto;
+  max-height: 400px;
+}

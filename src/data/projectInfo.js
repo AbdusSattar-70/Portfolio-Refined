@@ -2,8 +2,8 @@ const projectInfo = [
   {
     id: 1,
     title: 'First Capstone',
-    made: ' in March 2022',
-
+    made: ' on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
     description: 'This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose This repo is a part of the learning purpose...',
     technologies: ['HTML', 'CSS', 'JavaScript', 'HTML', 'CSS', 'JavaScript'],
     image: 'https://drive.google.com/uc?id=1qHobmV_rDGsdZHFaPS3PiOG_kZdieHEP',
@@ -13,7 +13,8 @@ const projectInfo = [
   {
     id: 2,
     title: 'To Do List',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
 
     description: 'This repo is created for learning objectives...',
     technologies: ['css', 'html', 'bootstrap', 'HTML', 'CSS', 'JavaScript'],
@@ -24,7 +25,8 @@ const projectInfo = [
   {
     id: 3,
     title: 'Awesome Book',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
 
     description: 'AwesomeBookES6 is a simple website that displays...',
     technologies: ['html', 'bootstrap', 'Ruby', 'HTML', 'CSS', 'JavaScript'],
@@ -35,7 +37,8 @@ const projectInfo = [
   {
     id: 4,
     title: 'Leaderboard',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
 
     description: 'Leaderboard is my demo project for learning...',
     technologies: ['html', 'bootstrap', 'Ruby', 'HTML', 'CSS', 'JavaScript'],
@@ -46,7 +49,8 @@ const projectInfo = [
   {
     id: 5,
     title: 'To Do List',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
 
     description: 'A daily selection of privately personalized reads...',
     technologies: ['html', 'bootstrap', 'Ruby', 'HTML', 'CSS', 'JavaScript'],
@@ -57,7 +61,8 @@ const projectInfo = [
   {
     id: 6,
     title: 'SpendiGo!',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
 
     description: 'In this exercise repo, I wrote a few practical tests...',
     technologies: ['html5', 'Ruby', 'Rails', 'HTML', 'CSS', 'JavaScript'],
@@ -68,7 +73,9 @@ const projectInfo = [
   {
     id: 7,
     title: 'FirstCapstone',
-    made: 'in March 2022',
+    made: 'on March 2022',
+    collaborator: ['sattar', 'santosh', 'rafiq'],
+
     description: 'This repo is a part of the learning purpose...',
     technologies: ['HTML', 'CSS', 'JavaScript', 'HTML', 'CSS', 'JavaScript'],
     image: 'https://drive.google.com/uc?id=17j0ggpWJG7h1_fBVx1gYieOo99DqWcG0',
