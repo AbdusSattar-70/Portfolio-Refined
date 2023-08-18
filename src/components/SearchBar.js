@@ -62,7 +62,7 @@ const SearchBar = () => {
         </InputGroup>
       </Form>
       <Form inline>
-        <Button type="button" onClick={handleSearch}>
+        <Button type="button" onClick={handleSearch} className="m-2">
           <FaMagnifyingGlass />
         </Button>
       </Form>

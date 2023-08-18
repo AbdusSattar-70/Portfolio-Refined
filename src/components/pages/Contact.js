@@ -87,12 +87,7 @@ const Contact = () => {
           <div className="col-lg-6 mb-4 d-flex">
             <div className="d-flex flex-fill justify-content-center align-items-center">
               <div className="boxshadow">
-                <p className="mt-2">
-                  Software Engineer with a strong background in building scalable web applications
-                  for mid-sized companies. Proficient in all aspects of the software
-                  development lifecycle and skilled in end-to-end project management,
-                  from development to delivery.
-                </p>
+
                 <p>
                   I am seeking opportunities
                   to apply my skills and continue growing as a developer.

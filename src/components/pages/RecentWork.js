@@ -43,16 +43,16 @@ const RecentWork = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex">
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button type="button" className="button modalBtn">
+                    <button type="button" className="button modalBtn m-2">
                       <FaArrowUpRightFromSquare />
                       {' '}
                       See Live
                     </button>
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <button type="button" className="button modalBtn">
+                    <button type="button" className="button modalBtn m-2">
                       <FaGithub />
                       {' '}
                       Source
