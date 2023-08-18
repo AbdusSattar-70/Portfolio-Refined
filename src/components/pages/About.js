@@ -15,9 +15,9 @@ const About = () => (
   <>
     <Container className="mt-4">
       <Row className="mt-4">
-        <Col>
+        <Col className="d-flex justify-content-center align-items-center">
           <div className="position-relative">
-            <img src={photo} alt="Profile" className="img-fluid" />
+            <img src={photo} alt="Profile" className="img-fluid custom-photo" />
             <div className="social-media-overlay">
               <Tippy content="Say Hello On Facebook">
                 <Nav.Link href="https://www.facebook.com/your_facebook_profile_url" target="_blank">

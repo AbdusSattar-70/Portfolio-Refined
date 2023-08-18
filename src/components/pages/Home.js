@@ -8,6 +8,7 @@ import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
 import ProjectCards from '../ProjectCards';
 import Footer from '../Footer';
+import Codebase from './Codebase';
 
 const Home = () => (
   <>
@@ -81,6 +82,7 @@ const Home = () => (
         </div>
       </div>
     </div>
+    <Codebase />
     <Footer />
   </>
 );

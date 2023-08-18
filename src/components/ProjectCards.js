@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Modal, Row, Col } from 'react-bootstrap';
 import {
-  FaGithub, FaArrowUpRightFromSquare, FaXmark, FaHandsHoldingCircle,
+  FaGithub, FaArrowUpRightFromSquare, FaXmark, FaHandsHoldingCircle, FaCircleUser,
 } from 'react-icons/fa6';
+import { v4 as uuid } from 'uuid';
 import Tippy from '@tippyjs/react';
 import projectInfo from '../data/projectInfo';
 
@@ -26,8 +27,8 @@ const ProjectCards = () => {
 
     <div className="projectCard">
       {projectInfo.map((project) => (
-        <Tippy content="To See Details Click On It" key={project.id}>
-          <div key={project.id}>
+        <Tippy content="To See Details Click On It" key={uuid()}>
+          <div key={uuid()}>
             <button
               type="button"
               className="boxshadow projectCardBtn"
@@ -47,9 +48,9 @@ const ProjectCards = () => {
                   {project.made}
                 </span>
               </h3>
-              <ul className="d-flex justify-content-between">
+              <ul className="d-flex flex-wrap justify-content-between">
                 {project.technologies.map((tech) => (
-                  <li key={tech} className="techStyle">
+                  <li key={uuid()} className="techStyle">
                     {tech}
                   </li>
                 ))}
@@ -82,8 +83,18 @@ const ProjectModalContent = ({ project, onClose }) => (
         <span>
           <FaHandsHoldingCircle className="iconSize" />
           {' '}
-          {project.made}
+          <span className="fs-6">
+            {project.made}
+          </span>
+          {' '}
+          By
         </span>
+        {project.collaborator.map((name) => (
+          <span key={uuid()} className="m-2 fs-6">
+            <FaCircleUser className="iconSize" />
+            {name}
+          </span>
+        ))}
       </Modal.Title>
       <button type="button" onClick={onClose} className="humIcon">
         <FaXmark />
@@ -103,7 +114,7 @@ const ProjectModalContent = ({ project, onClose }) => (
           <Col md={8} className="p-4">
             <div>
               <p>{project.description}</p>
-              <ul className="techList d-flex justify-content-between">
+              <ul className="techList d-flex flex-wrap justify-content-between">
                 {project.technologies.map((tech) => (
                   <li key={tech} className="techStyle">
                     {tech}
@@ -111,16 +122,16 @@ const ProjectModalContent = ({ project, onClose }) => (
                 ))}
               </ul>
             </div>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex flex-wrap justify-content-between">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button type="button" className="button modalBtn">
+                <button type="button" className="button modalBtn m-2">
                   <FaArrowUpRightFromSquare />
                   {' '}
                   See Live
                 </button>
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <button type="button" className="button modalBtn">
+                <button type="button" className="button modalBtn m-2">
                   <FaGithub />
                   {' '}
                   Source
@@ -139,6 +150,7 @@ ProjectModalContent.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     made: PropTypes.string.isRequired,
+    collaborator: PropTypes.arrayOf(PropTypes.string).isRequired,
     image: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
