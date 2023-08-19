@@ -5,7 +5,7 @@ import { FaCircle } from 'react-icons/fa6';
 import SearchBar from '../SearchBar';
 
 const Codebase = () => (
-  <Container className="pb-5 background mt-4">
+  <Container className="pb-5 background mt-4 boxshadowCode">
     <h2 className="mb-1">
       <FaCircle className="red" />
       {' '}

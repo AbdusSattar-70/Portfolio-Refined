@@ -29,7 +29,7 @@ CustomToggle.propTypes = {
 };
 
 const SearchBar = () => {
-  const [selectedRole, setSelectedRole] = useState('Select url to see about me');
+  const [selectedRole, setSelectedRole] = useState('Select The Url To See About Me');
 
   const handleRoleSelect = (role) => {
     setSelectedRole(role);

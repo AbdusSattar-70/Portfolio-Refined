@@ -25,7 +25,7 @@ const RecentWork = () => {
                   className="d-block w-100 h-100 projectImg"
                 />
               </Col>
-              <Col md={8} className="p-4">
+              <Col md={8} className="p-4 bgCard">
                 <div>
                   <h6>
                     {project.title}
@@ -64,7 +64,7 @@ const RecentWork = () => {
                     </button>
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <button type="button" className="button modalBtn m-2">
+                    <button type="button" className="button modalBtn modalBtnWhite m-2">
                       <FaGithub />
                       {' '}
                       Source
