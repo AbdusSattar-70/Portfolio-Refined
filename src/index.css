@@ -147,6 +147,7 @@
   width: 1px;
   visibility: hidden;
 }
+
 .displayNone p {
   visibility: hidden;
 }
@@ -274,10 +275,11 @@
     width: 1em;
   }
 }
+
 @media (max-width: 850px) {
-    .navMainContainer {
-      padding: 1.438rem 2.1879999999999997rem 1.688rem 6.25rem;
-    }
+  .navMainContainer {
+    padding: 1.438rem 2.1879999999999997rem 1.688rem 6.25rem;
+  }
 }
 
 .button {
@@ -341,7 +343,6 @@
 }
 
 @keyframes blink {
-
   0%,
   100% {
     opacity: 1;
