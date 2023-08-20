@@ -137,11 +137,15 @@
 }
 
 .displayNone {
-  height: 3rem;
+  height: 1rem;
   margin: 0 0 0.6rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   border: solid 2px #e8e8e8;
   background-color: var(--white-two);
+}
+
+.displayNoneCode p {
+  width: 1px;
+  visibility: hidden;
 }
 
 .displayNone p {
@@ -151,7 +155,6 @@
 .scrollable {
   max-height: 58vh;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .button a {
@@ -272,6 +275,12 @@
   }
 }
 
+@media (max-width: 850px) {
+  .navMainContainer {
+    padding: 1.438rem 2.1879999999999997rem 1.688rem 6.25rem;
+  }
+}
+
 .button {
   padding: 5px 15px;
   font-size: 24px;
@@ -330,4 +339,22 @@
 
 .comLink {
   color: #fcf803;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursorEffect {
+  width: 1px;
+  height: 25px;
+  border: 1px solid #c4c4c4;
+  animation: blink 0.7s infinite;
 }

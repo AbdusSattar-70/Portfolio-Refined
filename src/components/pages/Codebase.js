@@ -15,9 +15,9 @@ const Codebase = () => (
     </h2>
     <Row>
       <Col className="mx-0 px-0">
-        <div className="code-block">
-          <div>
-            <pre>
+        <div>
+          <div className="boxshadow">
+            <pre className="blockHome">
               {`
 class SoftwareEngineer < Human : : Base
   def about
@@ -36,6 +36,7 @@ class SoftwareEngineer < Human : : Base
   render json: @sattar_data
 end
               `}
+              <hr className="cursorEffect" />
             </pre>
             <SearchBar />
           </div>
