@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  FaFacebookF, FaGooglePlusG, FaGoogleDrive,
-  FaTwitter, FaLinkedinIn, FaCircle,
+  FaFacebookF, FaTwitter, FaLinkedinIn, FaCircle, FaAngellist, FaGithub,
 } from 'react-icons/fa6';
 import {
   Container, Row, Col, Nav, Table,
@@ -24,30 +23,93 @@ const About = () => (
         </h2>
         <Row>
           <Col className="mx-0 px-0">
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="boxshadow ">
+                <h2>A Quick Look at Me</h2>
+                <p>
+                  I&apos;m a software engineer from the lively
+                  city of
+                  <a href="https://en.wikipedia.org/wiki/Mymensingh" target="_blank" rel="noreferrer">
+                    <span className="text-warning"> Mymensingh, Bangladesh. </span>
+                  </a>
+                  I&apos;m 33 years old, and I&apos;ve got an interesting blend of
+                  passions that I&apos;d love to share.
+                </p>
+                <p>
+                  Besides my tech side, I groove to music, get lost in detective movies,
+                  and dive into adventure films and chess games.
+                  And here&apos;s the twist—I&apos;m all about sharing what I know,
+                  whether it&apos;s
+                  <a href="/about#Mentor">
+                    <span className="text-warning"> Mentoring </span>
+                  </a>
+                  or firing up positivity in the community.
+                </p>
+                <p>
+                  But hang on, This, my friends, is just a sneak peek! If you&apos;re curious
+                  to know more about my
+                  <a href="/about#experience">
+                    <span className="text-warning"> experiences </span>
+                  </a>
+                  ,
+                  <a href="/about#skills">
+                    <span className="text-warning"> skills </span>
+                  </a>
+                  , and
+                  <a href="/about#story">
+                    <span className="text-warning"> stories </span>
+                  </a>
+                  ,
+                  come along on this online journey with me.
+                </p>
+                <hr className="cursorEffect" />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="pb-5 background mt-4 boxshadowCode">
+        <h2 className="mb-1">
+          <FaCircle className="red" />
+          {' '}
+          <FaCircle className="yellow" />
+          {' '}
+          <FaCircle className="green" />
+        </h2>
+        <Row>
+          <Col className="mx-0 px-0">
             <div className="code-block">
               <Col className="d-flex justify-content-center align-items-center">
                 <div className="position-relative">
                   <img src={photo} alt="Profile" className="img-fluid custom-photo" />
                   <div className="social-media-overlay">
                     <Tippy content="Say Hello On Facebook">
-                      <Nav.Link href="https://www.facebook.com/your_facebook_profile_url" target="_blank">
+                      <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank">
                         <FaFacebookF className="iconSize" />
                       </Nav.Link>
                     </Tippy>
-                    <Nav.Link href="https://www.google.com/your_google_plus_profile_url" target="_blank">
-                      <FaGooglePlusG className="iconSize" />
-                    </Nav.Link>
+
                     <Tippy content="Say Hello On LinkedIn">
-                      <Nav.Link href="https://www.linkedin.com/your_linkedin_profile_url" target="_blank">
+                      <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
                         <FaLinkedinIn className="iconSize" />
                       </Nav.Link>
                     </Tippy>
-                    <Nav.Link href="https://www.google.com/your_google_drive_url" target="_blank">
-                      <FaGoogleDrive className="iconSize" />
-                    </Nav.Link>
+
                     <Tippy content="Say Hello On Twitter">
-                      <Nav.Link href="https://www.twitter.com/your_twitter_profile_url" target="_blank">
+                      <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
                         <FaTwitter className="iconSize" />
+                      </Nav.Link>
+                    </Tippy>
+                    <Tippy content="Say Hello On Wellfound">
+                      <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank">
+                        <FaAngellist className="iconSize" />
+
+                      </Nav.Link>
+                    </Tippy>
+                    <Tippy content="Find Me On GitHub">
+                      <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank">
+                        <FaGithub className="iconSize" />
                       </Nav.Link>
                     </Tippy>
                   </div>
@@ -65,19 +127,17 @@ const About = () => (
           {' '}
           <FaCircle className="green" />
         </h2>
-        <Row>
+        <Row id="story">
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div className="scrollable">
-                <h5 className="sticky-top text-center">ABOUT ME</h5>
+              <div className="scrollable boxshadow">
                 {story}
-
               </div>
             </div>
           </Col>
         </Row>
       </Container>
-      <Container className="pb-5 background mt-4 boxshadowCode">
+      <Container className="pb-5 background mt-4 boxshadowCode ">
         <h2 className="mb-1">
           <FaCircle className="red" />
           {' '}
@@ -85,12 +145,11 @@ const About = () => (
           {' '}
           <FaCircle className="green" />
         </h2>
-        <Row>
+        <Row id="experience">
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div className="scrollable">
+              <div className="scrollable boxshadow">
                 <h5 className="sticky-top text-center">EXPERIENCES</h5>
-
                 <p>
                   <strong>
                     <a href="https://www.microverse.org" className="comLink" target="_blank" rel="noopener noreferrer">
@@ -118,7 +177,7 @@ const About = () => (
                   <br />
                   January 2023 – Present
                 </p>
-                <p>
+                <p id="Mentor">
                   Mentoring multiple junior web developers and providing technical support
                   through many code reviews. Providing advice and tips on maintaining
                   motivation to maintain longevity in the program.
@@ -147,7 +206,7 @@ const About = () => (
         </Row>
       </Container>
 
-      <Container className="pb-5 background mt-4 boxshadowCode">
+      <Container className="pb-5 background mt-4 boxshadowCode ">
         <h2 className="mb-1">
           <FaCircle className="red" />
           {' '}
@@ -155,11 +214,11 @@ const About = () => (
           {' '}
           <FaCircle className="green" />
         </h2>
-        <Row>
+        <Row id="skills">
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div className="scrollable">
-                <Table>
+              <div className="scrollable ">
+                <Table className="boxshadow">
                   <thead>
                     <tr>
                       <td colSpan="2" className="text-center">
@@ -226,7 +285,7 @@ const About = () => (
                     </tr>
                     <tr>
                       <td colSpan="2">
-                        Remote, Asynchronous, Cross-cultural, International, Global
+                        Organizing,self-belief,Resilience ,Determination,Adaptability
                       </td>
                     </tr>
                     <tr>
@@ -236,7 +295,7 @@ const About = () => (
                     </tr>
                     <tr>
                       <td colSpan="2">
-                        Creativity, Collaboration, Results-oriented, Pair Programming
+                        Remote, Asynchronous, Cross-cultural, Results-oriented, Pair Programming,
                       </td>
                     </tr>
                   </tbody>
@@ -246,7 +305,6 @@ const About = () => (
           </Col>
         </Row>
       </Container>
-
     </Container>
     <Footer />
   </>
