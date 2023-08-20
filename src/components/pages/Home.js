@@ -38,7 +38,12 @@ const Home = () => (
                   <br />
                   I&apos;m
                   {' '}
-                  <span className="text-primary">Abdus Sattar</span>
+                  <span className="text-primary">
+                    {' '}
+                    Abdus Sattar
+                    {' '}
+                    <span className="cursorEffect" />
+                  </span>
                 </h1>
 
                 <h4>I&apos;m a Software Engineer</h4>
@@ -52,7 +57,7 @@ const Home = () => (
                     Looking To Start A Project?
                     {' '}
                     <Link to="/contact">
-                      <span className="text-primary">Let&apos;s Talk</span>
+                      <span className="text-warning">Let&apos;s Talk</span>
                     </Link>
                   </span>
                 </p>
