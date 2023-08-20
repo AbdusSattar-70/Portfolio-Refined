@@ -36,6 +36,7 @@ class SoftwareEngineer < Human : : Base
   render json: @sattar_data
 end
               `}
+              <hr className="cursorEffect" />
             </pre>
             <SearchBar />
           </div>

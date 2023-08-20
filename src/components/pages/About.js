@@ -7,7 +7,7 @@ import {
   Container, Row, Col, Nav, Table,
 } from 'react-bootstrap';
 import Tippy from '@tippyjs/react';
-
+import story from '../../data/story';
 import photo from '../../assets/photo.png';
 import Footer from '../Footer';
 
@@ -57,7 +57,7 @@ const About = () => (
           </Col>
         </Row>
       </Container>
-      <Container className="pb-5 background mt-4 boxshadowCode">
+      <Container className="pb-5 background mt-4 boxshadowCode ">
         <h2 className="mb-1">
           <FaCircle className="red" />
           {' '}
@@ -68,40 +68,10 @@ const About = () => (
         <Row>
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div>
-                <h5>About Me</h5>
-                <p>
-                  Software Engineer with a strong background in building scalable web
-                  applications for mid-sized companies. Proficient in all aspects of
-                  the software development lifecycle and skilled in end-to-end project
-                  management, from development to delivery. I&apos;ve gained extensive
-                  experience working remotely and asynchronously with developers from
-                  different countries on several real-world projects, such as building
-                  a weather app with APIs and a live chat application with web sockets.
-                  My unique combination of technical skills and experience in a
-                  high-stress environment sets me apart from other developers. I am
-                  seeking opportunities to apply my skills and continue growing as a
-                  developer. Let&apos;s work together to create innovative solutions and
-                  drive success.
-                </p>
-                <h5>EDUCATION</h5>
-                <p>
-                  <strong>
-                    <a href="https://www.microverse.org" className="comLink" target="_blank" rel="noopener noreferrer">
-                      MICROVERSE, January 2023– present
-                    </a>
-                  </strong>
-                  <br />
-                  <em>Remote Full Stack Web Development Program, Full Time</em>
-                  <br />
-                  Spent 1000+ hours mastering algorithms, data structures,
-                  and full-stack development while simultaneously developing
-                  projects with Ruby, Rails, JavaScript, React, and Redux.
-                  <br />
-                  Developed skills in remote pair programming using GitHub,
-                  industry-standard git-flow, and daily standups to communicate
-                  and collaborate with international remote developers.
-                </p>
+              <div className="scrollable">
+                <h5 className="sticky-top text-center">ABOUT ME</h5>
+                {story}
+
               </div>
             </div>
           </Col>
@@ -118,8 +88,9 @@ const About = () => (
         <Row>
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div>
-                <h5>EXPERIENCE</h5>
+              <div className="scrollable">
+                <h5 className="sticky-top text-center">EXPERIENCES</h5>
+
                 <p>
                   <strong>
                     <a href="https://www.microverse.org" className="comLink" target="_blank" rel="noopener noreferrer">
@@ -187,7 +158,7 @@ const About = () => (
         <Row>
           <Col className="mx-0 px-0">
             <div className="code-block">
-              <div>
+              <div className="scrollable">
                 <Table>
                   <thead>
                     <tr>
