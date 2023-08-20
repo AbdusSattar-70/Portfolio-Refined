@@ -155,7 +155,6 @@
 .scrollable {
   max-height: 58vh;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .button a {
