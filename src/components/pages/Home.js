@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaFacebookF, FaGooglePlusG, FaGoogleDrive,
+  FaFacebookF, FaAngellist, FaGithub,
   FaTwitter, FaLinkedinIn, FaCircle,
 } from 'react-icons/fa6';
 import {
@@ -46,13 +46,13 @@ const Home = () => (
                   </span>
                 </h1>
 
-                <h4>I&apos;m a Software Engineer</h4>
+                <h4>I&apos;m a Software Engineer from Bangladesh</h4>
                 <p>
                   I can help you build a product, feature or
                   website Look through some of my work and experience! If you like
                   what you
                   see and have a project you need coded,
-                  don&apos;t hesitate to contact me.
+                  don&apos;t hesitate to contact me —
                   <span>
                     Looking To Start A Project?
                     {' '}
@@ -63,27 +63,31 @@ const Home = () => (
                 </p>
                 <div className="d-flex align-items-center justify-content-between p-3 social_media">
                   <Tippy content="Say Hello On Facebook">
-                    <Nav.Link href="https://www.facebook.com/your_facebook_profile_url" target="_blank">
+                    <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank">
                       <FaFacebookF className="iconSize" />
                     </Nav.Link>
                   </Tippy>
-                  <Nav.Link href="https://www.google.com/your_google_plus_profile_url" target="_blank">
-                    <FaGooglePlusG className="iconSize" />
 
-                  </Nav.Link>
                   <Tippy content="Say Hello On LinkedIn">
-
-                    <Nav.Link href="https://www.linkedin.com/your_linkedin_profile_url" target="_blank">
+                    <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
                       <FaLinkedinIn className="iconSize" />
                     </Nav.Link>
                   </Tippy>
-                  <Nav.Link href="https://www.google.com/your_google_drive_url" target="_blank">
-                    <FaGoogleDrive className="iconSize" />
-                  </Nav.Link>
-                  <Tippy content="Say Hello On Twitter">
 
-                    <Nav.Link href="https://www.twitter.com/your_twitter_profile_url" target="_blank">
+                  <Tippy content="Say Hello On Twitter">
+                    <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
                       <FaTwitter className="iconSize" />
+                    </Nav.Link>
+                  </Tippy>
+                  <Tippy content="Say Hello On Wellfound">
+                    <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank">
+                      <FaAngellist className="iconSize" />
+
+                    </Nav.Link>
+                  </Tippy>
+                  <Tippy content="Find Me On GitHub">
+                    <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank">
+                      <FaGithub className="iconSize" />
                     </Nav.Link>
                   </Tippy>
 

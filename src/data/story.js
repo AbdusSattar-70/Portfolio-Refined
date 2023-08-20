@@ -1,10 +1,10 @@
 const story = (
   <div>
-    <h1>
+    <h4>
       From Line Technician to Software Engineer: A Journey
       of Determination and Transformation
 
-    </h1>
+    </h4>
     <p>
       Imagine taking on the challenge of becoming a software
       engineer as if you’re conquering the formidable Mount Everest —
@@ -32,7 +32,7 @@ const story = (
       the art of effective communication, especially during those
       nerve-wracking blackouts and storms.
     </p>
-    <h2>A Pivotal Year and Collective Resilience</h2>
+    <h6>A Pivotal Year and Collective Resilience</h6>
     <p>
       The pivotal year was 2008 — a period when BREB confronted a
       daunting challenge stemming from the persistent gap between power
@@ -44,7 +44,7 @@ const story = (
       my consciousness: challenges may loom large, but they can be
       conquered with a resolute commitment.
     </p>
-    <h2>Embracing Change and Pursuing Dreams</h2>
+    <h6>Embracing Change and Pursuing Dreams</h6>
     <p>
       As the specter of load-shedding began to recede, I confronted a
       personal reckoning. While my tenure with BREB had served its purpose,
@@ -64,7 +64,7 @@ const story = (
       guidance. But my burgeoning curiosity didn’t stop there —
       it soon led me to an unexpected discovery: Microverse.
     </p>
-    <h2>Microverse: A Platform of Transformation</h2>
+    <h6>Microverse: A Platform of Transformation</h6>
     <p>
       A simple Facebook ad introduced me to Microverse,
       an online platform that promised to teach coding for free upfront.
@@ -78,7 +78,7 @@ const story = (
       With Microverse’s help, I jumped into coding, ready to face
       new challenges.
     </p>
-    <h2>Embracing Challenges and Growth</h2>
+    <h6>Embracing Challenges and Growth</h6>
     <p>
       Microverse was both a haven and a test. I loved
       the learning materials, but meeting deadlines was tough.
@@ -93,7 +93,7 @@ const story = (
       job as a code reviewer at Microverse. Helping others and suggesting
       improvements became my mission.
     </p>
-    <h2>Continuing the Journey and Achieving Milestones</h2>
+    <h6>Continuing the Journey and Achieving Milestones</h6>
     <p>
       As months turned into years, I earned a full-stack certificate
       from Microverse. Mentors and leaders praised my progress.
@@ -107,7 +107,7 @@ const story = (
       me push through doubts. I realized that with passion and hard work,
       even big dreams are possible.
     </p>
-    <h2>Sharing the Journey and Inspiring Others</h2>
+    <h6>Sharing the Journey and Inspiring Others</h6>
     <p>
       Sharing my story became important. As a code reviewer,
       I could guide and mentor others. I felt responsible for shaping
@@ -119,7 +119,7 @@ const story = (
       and keep moving forward. Leadership, communication, and
       problem-solving skills also played a big role.
     </p>
-    <h2>Continuing the Quest and Looking Forward</h2>
+    <h6>Continuing the Quest and Looking Forward</h6>
     <p>
       Earning my Microverse certificate was a huge achievement.
       But it was just the beginning. Software engineering is always
@@ -131,7 +131,7 @@ const story = (
       tough but doable. My story wasn’t just mine; it represented the
       stories of many who dared to chase their dreams.
     </p>
-    <h2>Persistence and Self-Belief</h2>
+    <h6>Persistence and Self-Belief</h6>
     <p>
       Now, facing new opportunities, I’m reminded that persistence and
       self-belief are powerful. Transforming from a technician to a software
