@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import {
   FaGithub, FaArrowUpRightFromSquare, FaHandsHoldingCircle, FaCircleUser,
 } from 'react-icons/fa6';
+import Tippy from '@tippyjs/react';
 import projectInfo from '../../data/projectInfo';
 import Footer from '../Footer';
 
@@ -38,13 +39,21 @@ const RecentWork = () => {
                       </span>
                       {' '}
                       By
+                      {' '}
                     </span>
-                    {project.collaborator.map((name) => (
-                      <span key={uuid()} className="m-2 fs-6">
+                    <span className="collaborator-list">
+                      <span className="collaborator-name">
                         <FaCircleUser className="iconSize" />
-                        {name}
+                        {project.collaborator[0]}
                       </span>
-                    ))}
+                      {project.collaborator.slice(1).map((name) => (
+                        <Tippy content={name} key={uuid()}>
+                          <span className="collaborator-name">
+                            <FaCircleUser className="iconSize" />
+                          </span>
+                        </Tippy>
+                      ))}
+                    </span>
                   </h6>
                   <p>{project.description}</p>
                   <ul className="techList d-flex flex-wrap justify-content-between">
@@ -56,13 +65,26 @@ const RecentWork = () => {
                   </ul>
                 </div>
                 <div className="d-flex justify-content-between flex-wrap">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button type="button" className="button modalBtn m-2">
-                      <FaArrowUpRightFromSquare />
-                      {' '}
-                      See Live
-                    </button>
-                  </a>
+                  {
+  project.link === 'not deployed' ? (
+    <Tippy content="This project is not yet deployed. You can clone the repository to explore its functionality locally.">
+      <button type="button" className="button modalBtn m-2">
+        <FaArrowUpRightFromSquare />
+        {' '}
+        See Live
+      </button>
+    </Tippy>
+  ) : (
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <button type="button" className="button modalBtn m-2">
+        <FaArrowUpRightFromSquare />
+        {' '}
+        See Live
+      </button>
+    </a>
+  )
+}
+
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <button type="button" className="button modalBtn modalBtnWhite m-2">
                       <FaGithub />
