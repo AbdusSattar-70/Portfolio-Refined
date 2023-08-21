@@ -358,3 +358,8 @@
   border: 1px solid #c4c4c4;
   animation: blink 0.7s infinite;
 }
+
+.collaborator-name {
+  margin: -1px;
+  cursor: pointer;
+}
