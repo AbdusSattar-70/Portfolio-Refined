@@ -358,3 +358,39 @@
   border: 1px solid #c4c4c4;
   animation: blink 0.7s infinite;
 }
+
+.collaborator-name {
+  margin: -1px;
+  cursor: pointer;
+}
+
+.footerFont {
+  font-size: 10px;
+}
+
+.projectCard {
+  position: relative;
+  overflow-y: scroll;
+  max-height: 73vh;
+}
+
+.sticky-button-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showprojectBtn {
+  padding: 5px;
+  font-size: 14px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.showprojectBtn.flipped {
+  transform: rotateX(360deg);
+  background-color: #ea047e;
+}

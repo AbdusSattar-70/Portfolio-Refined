@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub, FaAngellist,
+  FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub, FaAngellist, FaRegEnvelope,
 } from 'react-icons/fa';
+import Tippy from '@tippyjs/react';
 
 const Footer = () => (
   <section>
@@ -28,12 +29,18 @@ const Footer = () => (
             <a href="https://github.com/AbdusSattar-70/" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-white iconSize me-3" />
             </a>
+            <Tippy content="sasorganicagro@gmail.com">
+              <a href="mailto:sasorganicagro@gmail.com">
+                <FaRegEnvelope className="text-white iconSize me-3" />
+              </a>
+            </Tippy>
           </p>
         </section>
       </div>
-      <div className="text-center p-3 fs-6" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2023 Copyright:
-        <a className="text-white fs-6" target="_blank" href="https://github.com/AbdusSattar-70/portfolio/blob/master/LICENSE" rel="noreferrer">Abdus Sattar</a>
+      <div className="text-center p-3 footerFont" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        <span>Copyright © </span>
+        <a className="text-white footerFont" target="_blank" href="https://github.com/AbdusSattar-70/portfolio/blob/master/LICENSE" rel="noreferrer">Abdus Sattar</a>
+        <span> 2023 All rights Reserved</span>
       </div>
     </footer>
   </section>

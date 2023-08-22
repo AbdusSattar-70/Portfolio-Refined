@@ -276,7 +276,7 @@ const About = () => (
                     </tr>
                     <tr>
                       <td>Developer Tools</td>
-                      <td>GitHub, GitLab, Google Chrome Dev Tools, Slack, Visual Studio Code</td>
+                      <td>GitHub, GitLab, Postman, Chrome Dev Tool, Slack, VS Code</td>
                     </tr>
                     <tr>
                       <td colSpan="2" className="text-center" style={{ backgroundColor: '#0a4275', color: 'white' }}>
