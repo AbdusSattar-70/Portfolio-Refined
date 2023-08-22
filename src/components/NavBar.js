@@ -82,7 +82,7 @@ const NavBar = () => {
                 Contact
               </Nav.Link>
               <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
-                Recent Work
+                Projects
               </Nav.Link>
               <Nav.Link className="nav-link getResume" onClick={handleResumeLinkClick}>
                 Get Resume
