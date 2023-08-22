@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   FaFacebookF, FaAngellist, FaGithub,
-  FaTwitter, FaLinkedinIn, FaCircle,
+  FaTwitter, FaLinkedinIn, FaCircle, FaRegEnvelope,
 } from 'react-icons/fa6';
 import {
   Container, Row, Col,
@@ -90,7 +90,11 @@ const Home = () => (
                       <FaGithub className="iconSize" />
                     </Nav.Link>
                   </Tippy>
-
+                  <Tippy content="sasorganicagro@gmail.com">
+                    <a href="mailto:sasorganicagro@gmail.com">
+                      <FaRegEnvelope className="iconSize" />
+                    </a>
+                  </Tippy>
                 </div>
               </div>
 

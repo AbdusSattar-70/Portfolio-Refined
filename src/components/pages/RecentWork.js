@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { Row, Col } from 'react-bootstrap';
 import {
@@ -6,19 +6,33 @@ import {
 } from 'react-icons/fa6';
 import Tippy from '@tippyjs/react';
 import projectInfo from '../../data/projectInfo';
+import projectInfo2 from '../../data/projectInfo2';
 import Footer from '../Footer';
 
 const RecentWork = () => {
-  if (!projectInfo || projectInfo.length === 0) {
-    return <div>No projects found.</div>;
-  }
+  const [showSecondProjects, setShowSecondProjects] = useState(false);
+
+  const visibleProjects = showSecondProjects ? projectInfo2 : projectInfo;
+
+  const handleToggleProjects = () => {
+    setShowSecondProjects(!showSecondProjects);
+  };
 
   return (
     <>
-      <div className="projectCard ">
-        {projectInfo.map((project) => (
+      <div className="projectCard">
+        <div className="sticky-button-container">
+          <button
+            type="button"
+            className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
+            onClick={handleToggleProjects}
+          >
+            {showSecondProjects ? 'Highlighted Projects Only' : 'Console or non-deployed Only'}
+          </button>
+        </div>
+        {visibleProjects.map((project) => (
           <div key={project.id}>
-            <Row className="border boxshadowRecent projectImg">
+            <Row className="border boxshadowRecent projectImg ">
               <Col md={4} className="mx-0 px-0">
                 <img
                   src={project.image}
@@ -28,7 +42,7 @@ const RecentWork = () => {
               </Col>
               <Col md={8} className="p-4 bgCard">
                 <div>
-                  <h6>
+                  <h5>
                     {project.title}
                     {' '}
                     <span>
@@ -54,7 +68,7 @@ const RecentWork = () => {
                         </Tippy>
                       ))}
                     </span>
-                  </h6>
+                  </h5>
                   <p>{project.description}</p>
                   <ul className="techList d-flex flex-wrap justify-content-between">
                     {project.technologies.map((tech) => (
@@ -65,25 +79,25 @@ const RecentWork = () => {
                   </ul>
                 </div>
                 <div className="d-flex justify-content-between flex-wrap">
-                  {
-  project.link === 'not deployed' ? (
-    <Tippy content="This project is not yet deployed. You can clone the repository to explore its functionality locally.">
-      <button type="button" className="button modalBtn m-2">
-        <FaArrowUpRightFromSquare />
-        {' '}
-        See Live
-      </button>
-    </Tippy>
-  ) : (
-    <a href={project.link} target="_blank" rel="noopener noreferrer">
-      <button type="button" className="button modalBtn m-2">
-        <FaArrowUpRightFromSquare />
-        {' '}
-        See Live
-      </button>
-    </a>
-  )
-}
+                  {project.link === 'not deployed' ? (
+                    <Tippy content="This project is not yet deployed.
+                     You can clone the repository to explore its functionality locally."
+                    >
+                      <button type="button" className="button modalBtn m-2">
+                        <FaArrowUpRightFromSquare />
+                        {' '}
+                        See Live
+                      </button>
+                    </Tippy>
+                  ) : (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <button type="button" className="button modalBtn m-2">
+                        <FaArrowUpRightFromSquare />
+                        {' '}
+                        See Live
+                      </button>
+                    </a>
+                  )}
 
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <button type="button" className="button modalBtn modalBtnWhite m-2">
@@ -100,8 +114,9 @@ const RecentWork = () => {
             </div>
           </div>
         ))}
+        <Footer />
+
       </div>
-      <Footer />
     </>
   );
 };
