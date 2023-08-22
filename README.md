@@ -88,7 +88,7 @@ Together, these pages offer a comprehensive glimpse into my professional identit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://profound-churros-74fa3c.netlify.app/)
+- [Live Demo Link](https://eloquent-hamster-59adb5.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
