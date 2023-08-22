@@ -6,30 +6,33 @@ import {
 } from 'react-icons/fa6';
 import Tippy from '@tippyjs/react';
 import projectInfo from '../../data/projectInfo';
+import projectInfo2 from '../../data/projectInfo2';
 import Footer from '../Footer';
 
 const RecentWork = () => {
-  const [visibleProjects, setVisibleProjects] = useState(10);
-  const initialVisibleProjects = 10;
-  const handleSeeMoreClick = () => {
-    setVisibleProjects(projectInfo.length);
-  };
+  const [showSecondProjects, setShowSecondProjects] = useState(false);
 
-  const handleShowLessClick = () => {
-    setVisibleProjects(initialVisibleProjects);
-  };
+  const visibleProjects = showSecondProjects ? projectInfo2 : projectInfo;
 
-  if (!projectInfo || projectInfo.length === 0) {
-    return <div>No projects found.</div>;
-  }
+  const handleToggleProjects = () => {
+    setShowSecondProjects(!showSecondProjects);
+  };
 
   return (
     <>
-
       <div className="projectCard">
-        {projectInfo.slice(0, visibleProjects).map((project) => (
+        <div className="sticky-button-container">
+          <button
+            type="button"
+            className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
+            onClick={handleToggleProjects}
+          >
+            {showSecondProjects ? 'Highlighted Projects Only' : 'Console or non-deployed Only'}
+          </button>
+        </div>
+        {visibleProjects.map((project) => (
           <div key={project.id}>
-            <Row className="border boxshadowRecent projectImg">
+            <Row className="border boxshadowRecent projectImg ">
               <Col md={4} className="mx-0 px-0">
                 <img
                   src={project.image}
@@ -77,7 +80,9 @@ const RecentWork = () => {
                 </div>
                 <div className="d-flex justify-content-between flex-wrap">
                   {project.link === 'not deployed' ? (
-                    <Tippy content="This project is not yet deployed. You can clone the repository to explore its functionality locally.">
+                    <Tippy content="This project is not yet deployed.
+                     You can clone the repository to explore its functionality locally."
+                    >
                       <button type="button" className="button modalBtn m-2">
                         <FaArrowUpRightFromSquare />
                         {' '}
@@ -109,25 +114,9 @@ const RecentWork = () => {
             </div>
           </div>
         ))}
+        <Footer />
+
       </div>
-      {visibleProjects < projectInfo.length ? (
-        <button
-          type="button"
-          className="button modalBtn m-2 sticky-top"
-          onClick={handleSeeMoreClick}
-        >
-          See More
-        </button>
-      ) : (
-        <button
-          type="button"
-          className="button modalBtn m-2 sticky-top"
-          onClick={handleShowLessClick}
-        >
-          Show Less
-        </button>
-      )}
-      <Footer />
     </>
   );
 };
