@@ -363,3 +363,7 @@
   margin: -1px;
   cursor: pointer;
 }
+
+.footerFont {
+  font-size: 10px;
+}
