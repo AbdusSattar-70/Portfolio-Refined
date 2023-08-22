@@ -387,12 +387,10 @@
   padding: 5px;
   font-size: 14px;
   transition: transform 0.5s;
-    transform-style: preserve-3d;
-  }
+  transform-style: preserve-3d;
+}
 
-  .showprojectBtn.flipped {
-    transform: rotateX(360deg);
+.showprojectBtn.flipped {
+  transform: rotateX(360deg);
   background-color: #ea047e;
-  }
-
-
+}
