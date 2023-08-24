@@ -19,7 +19,7 @@ const projectInfo = [
     description: 'The Appoint Doctor Project is a user-friendly web app for booking doctor appointments. It offers secure login using Devise-jwt and supports multiple user roles (patient, doctor, admin). Admins can add/delete doctors. Users can schedule/cancel appointments and view their appointment list. The app simplifies the process of finding and managing medical appointments online....',
     technologies: ['Rails', 'React', 'Redux', 'PostgreSQL', 'JavaScript', 'Bootstrap', 'API', 'Full-stack'],
     image: appointDoctor,
-    link: 'https://profound-heliotrope-436869.netlify.app/',
+    link: 'https://abdussattar-70.github.io/appoint-doctor-frontend/',
     github: 'https://github.com/Tracy-miranja/appoint-doctor-frontend',
   },
 
