@@ -35,11 +35,15 @@
   border: none !important;
 }
 
+.techList {
+  padding-left: 0;
+}
+
 .boxshadow {
   background-color: #242f9b;
   color: var(--z);
-  margin: 10px;
-  padding: 5%;
+  margin: 5px;
+  padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -51,10 +55,6 @@
   border-radius: 10px;
   margin-bottom: 1rem;
   width: 100%;
-}
-
-.boxshadow:hover {
-  transform: scale(1.02);
 }
 
 .boxshadowRecent {
@@ -69,8 +69,27 @@
 }
 
 .projectCardBtn {
+  width: 18.75rem;
+  color: var(--z);
+  margin: 25px 5px;
+  transition: transform 0.3s ease-in-out;
   border: none;
   outline: none;
+}
+
+.projectCardBtn.project-info-2.odd,
+.projectCardBtn.project-info.even {
+  background-color: #ea047e;
+}
+
+.projectCardBtn.project-info.odd,
+.projectCardBtn.project-info-2.even {
+  background-color: #242f9b;
+}
+
+.projectCardBtn:hover,
+.boxshadow:hover {
+  transform: scale(1.02);
 }
 
 .projectImg {
@@ -108,7 +127,6 @@
 
 .navMainContainer {
   height: 5rem;
-  margin: 0 0 0.6rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   border-bottom: solid 1px #e8e8e8;
   background-color: var(--white-two);
@@ -328,7 +346,6 @@
   background-color: var(--z);
   box-shadow: 0 20px 20px 20px #41424563;
   border-radius: 10px;
-  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -368,19 +385,14 @@
   font-size: 10px;
 }
 
-.projectCard {
-  position: relative;
-  overflow-y: scroll;
-  max-height: 73vh;
-}
-
-.sticky-button-container {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.toggleProject {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 5%;
+  background-color: #ea047e;
+  color: var(--white-two);
 }
 
 .showprojectBtn {
@@ -392,5 +404,37 @@
 
 .showprojectBtn.flipped {
   transform: rotateX(360deg);
+  background-color: #242f9b;
+}
+
+/* Home.css */
+.project-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100vw;
+  padding: 0 20px;
+  background-color: #090580;
+}
+
+.projectCard {
+  display: flex;
+  flex: 0 0 auto;
+  margin-right: 5%;
+}
+
+.headlineBg {
+  background-color: #242f9b;
+  color: var(--white-two);
+}
+
+.navigatebg {
   background-color: #ea047e;
+}
+
+.navigatepadding,
+.toggleProjectPadding,
+.headlinePadding {
+  padding: 5% 10%;
 }

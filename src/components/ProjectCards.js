@@ -7,8 +7,9 @@ import {
 import { v4 as uuid } from 'uuid';
 import Tippy from '@tippyjs/react';
 import projectInfo from '../data/projectInfo';
+import projectInfo2 from '../data/projectInfo2';
 
-const ProjectCards = () => {
+const ProjectCards = ({ showSecondProjects }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openProjectModal = (project) => {
@@ -19,58 +20,61 @@ const ProjectCards = () => {
     setSelectedProject(null);
   };
 
-  if (!projectInfo || projectInfo.length === 0) {
-    return <div>No projects found.</div>;
-  }
+  const visibleProjects = showSecondProjects ? projectInfo2 : projectInfo;
 
   return (
+    <>
 
-    <div className="projectCard">
-      {projectInfo.map((project) => (
-        <Tippy content="To See Details Click On It" key={uuid()}>
+      <div className="projectCard">
+        {visibleProjects.map((project, index) => (
           <div key={uuid()}>
             <button
               type="button"
-              className="boxshadow projectCardBtn"
+              className={`projectCardBtn ${showSecondProjects ? 'project-info-2' : 'project-info'} ${index % 2 === 0 ? 'even' : 'odd'}`}
               onClick={() => openProjectModal(project)}
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="d-block w-100 h-100 projectImg"
+                className="d-block w-100 h-100"
               />
-              <h3 className="mt-2">
-                {project.title}
-                {' '}
-                <span>
-                  <FaHandsHoldingCircle className="iconSize" />
-                  {' '}
-                  {project.made}
-                </span>
-              </h3>
-              <ul className="d-flex flex-wrap justify-content-between">
-                {project.technologies.map((tech) => (
+              <h6>{project.title}</h6>
+              <p>
+                {project.description.substring(0, 50)}
+                ...
+              </p>
+              <ul className="techList d-flex flex-wrap justify-content-between">
+                {project.technologies.slice(0, 3).map((tech) => (
                   <li key={uuid()} className="techStyle">
                     {tech}
                   </li>
                 ))}
+                {project.technologies.length > 3 && (
+                <li className="techStyle">
+                  +
+                  {project.technologies.length - 3}
+                  {' '}
+                  more
+                </li>
+                )}
               </ul>
+
             </button>
           </div>
-        </Tippy>
+        ))}
 
-      ))}
-
-      <Modal
-        show={!!selectedProject}
-        onHide={closeProjectModal}
-        dialogClassName="custom-modal"
-      >
-        {selectedProject && (
+        <Modal
+          show={!!selectedProject}
+          onHide={closeProjectModal}
+          dialogClassName="custom-modal"
+        >
+          {selectedProject && (
           <ProjectModalContent project={selectedProject} onClose={closeProjectModal} />
-        )}
-      </Modal>
-    </div>
+          )}
+        </Modal>
+      </div>
+    </>
+
   );
 };
 
@@ -103,35 +107,48 @@ const ProjectModalContent = ({ project, onClose }) => (
     </Modal.Header>
     <Modal.Body>
       <div>
-        <Row className="border boxshadowRecent">
+        <Row className="border">
           <Col md={4} className="mx-0 px-0">
             <img
               src={project.image}
               alt={project.title}
-              className="d-block w-100 h-100 projectItem projectImg"
+              className="d-block w-100 h-100 projectImg"
             />
           </Col>
-          <Col md={8} className="p-4">
+          <Col md={8} className="p-4 bgCard">
             <div>
               <p>{project.description}</p>
               <ul className="techList d-flex flex-wrap justify-content-between">
                 {project.technologies.map((tech) => (
-                  <li key={tech} className="techStyle">
+                  <li key={uuid()} className="techStyle">
                     {tech}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="d-flex flex-wrap justify-content-between">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button type="button" className="button modalBtn m-2">
-                  <FaArrowUpRightFromSquare />
-                  {' '}
-                  See Live
-                </button>
-              </a>
+            <div className="d-flex justify-content-between flex-wrap">
+              {project.link === 'not deployed' ? (
+                <Tippy content="This project is not yet deployed.
+                     You can clone the repository to explore its functionality locally."
+                >
+                  <button type="button" className="button modalBtn">
+                    <FaArrowUpRightFromSquare />
+                    {' '}
+                    See Live
+                  </button>
+                </Tippy>
+              ) : (
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button type="button" className="button modalBtn">
+                    <FaArrowUpRightFromSquare />
+                    {' '}
+                    See Live
+                  </button>
+                </a>
+              )}
+
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <button type="button" className="button modalBtn m-2">
+                <button type="button" className="button modalBtn modalBtnWhite">
                   <FaGithub />
                   {' '}
                   Source
@@ -140,7 +157,6 @@ const ProjectModalContent = ({ project, onClose }) => (
             </div>
           </Col>
         </Row>
-
       </div>
     </Modal.Body>
   </div>
@@ -169,6 +185,10 @@ ProjectModalContent.defaultProps = {
     link: '',
     github: '',
   },
+};
+
+ProjectCards.propTypes = {
+  showSecondProjects: PropTypes.bool.isRequired,
 };
 
 export default ProjectCards;

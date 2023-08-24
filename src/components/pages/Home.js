@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  FaFacebookF, FaAngellist, FaGithub,
-  FaTwitter, FaLinkedinIn, FaCircle, FaRegEnvelope,
+  FaFacebookF, FaAngellist, FaGithub, FaArrowRightLong, FaArrowLeftLong,
+  FaTwitter, FaLinkedinIn, FaRegEnvelope,
 } from 'react-icons/fa6';
 import {
   Container, Row, Col,
@@ -9,30 +9,19 @@ import {
 } from 'react-bootstrap';
 import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
-// import ProjectCards from '../ProjectCards';
 import Footer from '../Footer';
-import Codebase from './Codebase';
+import ProjectCards from '../ProjectCards';
 
-const Home = () => (
-  <>
-    <div>
-      <Container className="pb-5 background mt-4 boxshadowCode">
-        <h2 className="mb-1">
-          <FaCircle className="red" />
-          {' '}
-          <FaCircle className="yellow" />
-          {' '}
-          <FaCircle className="green" />
-        </h2>
+const Home = () => {
+  const [showSecondProjects, setShowSecondProjects] = useState(false);
+
+  return (
+    <>
+      <Container className="pb-5 headlineBg">
         <Row>
-          <Col className="mx-0 px-0">
-            <div className="code-block">
-              <div className="col-12 text-center welcomePanel">
-                <h1 className="Welcome"> Welcome Back!</h1>
-              </div>
-            </div>
+          <Col className="mx-0 px-0 ">
             <div className="d-flex justify-content-center align-items-center">
-              <div className="boxshadow ">
+              <div className="headlinePadding">
                 <h1>
                   Hey There,
                   <br />
@@ -48,8 +37,20 @@ const Home = () => (
 
                 <h4>I&apos;m a Software Engineer from Bangladesh</h4>
                 <p>
-                  I can help you build a product, feature or
-                  website Look through some of my work and experience! If you like
+                  I can help you build a product, feature, or
+                  website. Look through
+                  <span>
+                    {' '}
+                    <a href="#project">
+                      <span className="text-warning">
+                        some of my work
+                        {' '}
+                      </span>
+                    </a>
+                  </span>
+                  and
+                  experience!
+                  If you like
                   what you
                   see and have a project you need coded,
                   don&apos;t hesitate to contact me —
@@ -82,7 +83,6 @@ const Home = () => (
                   <Tippy content="Say Hello On Wellfound">
                     <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank">
                       <FaAngellist className="iconSize" />
-
                     </Nav.Link>
                   </Tippy>
                   <Tippy content="Find Me On GitHub">
@@ -97,14 +97,51 @@ const Home = () => (
                   </Tippy>
                 </div>
               </div>
-
             </div>
           </Col>
         </Row>
       </Container>
-      <Codebase />
-    </div>
-    <Footer />
-  </>
-);
+      <div className="toggleProject container">
+        <div className="toggleProjectPadding">
+          <h3>Featured Work</h3>
+          <p>
+            While I often focus on contract work, I also venture into
+            freelance opportunities and create projects for enjoyment.
+            Below, I showcase a blend of my recently deployed projects
+            and console-based creations designed for learning and fun. Explore and enjoy!
+          </p>
+          <button
+            type="button"
+            className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
+            onClick={() => setShowSecondProjects(!showSecondProjects)}
+          >
+            {showSecondProjects ? 'Toggle Deployed Only' : 'Toggle Console Only'}
+          </button>
+        </div>
+      </div>
+      <div id="project" className="project-cards-container container">
+        <ProjectCards showSecondProjects={showSecondProjects} />
+      </div>
+      <div className=" container px-0 navigatebg">
+        <div className="d-flex justify-content-between navigatepadding">
+          <a href="/about" rel="noopener noreferrer">
+            <button type="button" className="button modalBtn">
+              <FaArrowLeftLong />
+              {' '}
+              About me
+            </button>
+          </a>
+          <a href="/contact" rel="noopener noreferrer">
+            <button type="button" className="button modalBtn">
+              Contact me
+              {' '}
+              <FaArrowRightLong />
+            </button>
+          </a>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
 export default Home;
