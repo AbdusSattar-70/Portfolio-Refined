@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Refined/static/css/main.caf78a7b.css",
+    "main.js": "/Portfolio-Refined/static/js/main.47ed2ce2.js",
+    "static/media/photo.webp": "/Portfolio-Refined/static/media/photo.82984ec47e0bf21747ff.webp",
+    "static/media/nation.webp": "/Portfolio-Refined/static/media/nation.08f555434640c1b69162.webp",
+    "static/media/blog.webp": "/Portfolio-Refined/static/media/blog.de94482c2cec6cbb87cb.webp",
+    "static/media/recipe.webp": "/Portfolio-Refined/static/media/recipe.dcc2e9bd74e50ed5c81e.webp",
+    "static/media/spendigo.webp": "/Portfolio-Refined/static/media/spendigo.7cc974d827826ccd9689.webp",
+    "static/media/resume.pdf": "/Portfolio-Refined/static/media/resume.c163d1bd8c525ffbccd2.pdf",
+    "static/media/logo.png": "/Portfolio-Refined/static/media/logo.a45844b661bc8b4375dc.png",
+    "static/media/space.webp": "/Portfolio-Refined/static/media/space.de72cfde9a8d97240aaf.webp",
+    "static/media/portfolio.webp": "/Portfolio-Refined/static/media/portfolio.863a0f803bc0c29a61f1.webp",
+    "static/media/jscap.webp": "/Portfolio-Refined/static/media/jscap.5ecf111d6b7b80bde2b2.webp",
+    "static/media/leaderboard.webp": "/Portfolio-Refined/static/media/leaderboard.fd0cd6a11ccf7134a15c.webp",
+    "static/media/catalog.webp": "/Portfolio-Refined/static/media/catalog.48db2c5986d2ac8e122f.webp",
+    "static/media/first.webp": "/Portfolio-Refined/static/media/first.87a99ea6f9312cc51359.webp",
+    "static/media/vet.webp": "/Portfolio-Refined/static/media/vet.d32c06eea67dac2ed312.webp",
+    "static/media/math.webp": "/Portfolio-Refined/static/media/math.d57a1360fe51782da410.webp",
+    "static/media/appointDoctor.webp": "/Portfolio-Refined/static/media/appointDoctor.50682e53233e9797b002.webp",
+    "static/media/cms.webp": "/Portfolio-Refined/static/media/cms.3ff092b52b6c65389cc3.webp",
+    "static/media/medical.webp": "/Portfolio-Refined/static/media/medical.88820b7d732383bec175.webp",
+    "static/media/awesome.webp": "/Portfolio-Refined/static/media/awesome.32dab4465ac4b3a6bb0b.webp",
+    "static/media/todo.webp": "/Portfolio-Refined/static/media/todo.6d607f425c7f3b8da60a.webp",
+    "index.html": "/Portfolio-Refined/index.html",
+    "main.caf78a7b.css.map": "/Portfolio-Refined/static/css/main.caf78a7b.css.map",
+    "main.47ed2ce2.js.map": "/Portfolio-Refined/static/js/main.47ed2ce2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caf78a7b.css",
+    "static/js/main.47ed2ce2.js"
+  ]
+}
