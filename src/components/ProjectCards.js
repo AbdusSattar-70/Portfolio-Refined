@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Modal, Row, Col } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import {
   FaGithub, FaArrowUpRightFromSquare, FaXmark, FaHandsHoldingCircle, FaCircleUser,
 } from 'react-icons/fa6';

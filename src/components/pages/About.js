@@ -2,9 +2,11 @@ import React from 'react';
 import {
   FaFacebookF, FaTwitter, FaLinkedinIn, FaCircle, FaAngellist, FaGithub,
 } from 'react-icons/fa6';
-import {
-  Container, Row, Col, Nav, Table,
-} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Table from 'react-bootstrap/Table';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
 import Tippy from '@tippyjs/react';
 import story from '../../data/story';
 import photo from '../../assets/photo.jpg';
