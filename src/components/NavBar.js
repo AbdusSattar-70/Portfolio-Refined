@@ -81,9 +81,6 @@ const NavBar = () => {
               <Nav.Link as={NavLink} to="/contact" className="nav-link">
                 Contact
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/recent_work" className="nav-link">
-                Projects
-              </Nav.Link>
               <Nav.Link className="nav-link getResume" onClick={handleResumeLinkClick}>
                 Get Resume
               </Nav.Link>
@@ -117,9 +114,6 @@ const NavBar = () => {
                   </Nav.Link>
                   <Nav.Link as={NavLink} to="/contact" className="nav-link" onClick={() => setShowOffcanvas(false)}>
                     Contact
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/recent_work" className="nav-link" onClick={() => setShowOffcanvas(false)}>
-                    Recent Work
                   </Nav.Link>
                 </Nav>
               </div>
