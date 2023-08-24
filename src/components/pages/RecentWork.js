@@ -7,7 +7,6 @@ import {
 import Tippy from '@tippyjs/react';
 import projectInfo from '../../data/projectInfo';
 import projectInfo2 from '../../data/projectInfo2';
-import Footer from '../Footer';
 
 const RecentWork = () => {
   const [showSecondProjects, setShowSecondProjects] = useState(false);
@@ -27,7 +26,7 @@ const RecentWork = () => {
             className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
             onClick={handleToggleProjects}
           >
-            {showSecondProjects ? 'Highlighted Projects Only' : 'Console or non-deployed Only'}
+            {showSecondProjects ? 'Toggle Highlighted Projects' : 'Toggle Console Projects'}
           </button>
         </div>
         {visibleProjects.map((project) => (
@@ -109,12 +108,8 @@ const RecentWork = () => {
                 </div>
               </Col>
             </Row>
-            <div className="displayNone">
-              <p>display none</p>
-            </div>
           </div>
         ))}
-        <Footer />
 
       </div>
     </>
