@@ -6,7 +6,7 @@ import Tippy from '@tippyjs/react';
 
 const Footer = () => (
   <section>
-    <footer className="text-center text-white" style={{ backgroundColor: '#0a4275' }}>
+    <footer className="text-center text-white" style={{ backgroundColor: '#090580' }}>
       <div className="container p-4 pb-0">
         <section>
           <p className="d-flex justify-content-center align-items-center">
