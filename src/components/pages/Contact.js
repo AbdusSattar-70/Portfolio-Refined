@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import {
-  Button, Form, Toast,
-  Container, Row, Col,
-} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Toast from 'react-bootstrap/Toast';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import {
   FaCircle,
 } from 'react-icons/fa6';

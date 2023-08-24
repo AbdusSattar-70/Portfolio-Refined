@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { Row, Col } from 'react-bootstrap';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import {
   FaGithub, FaArrowUpRightFromSquare, FaHandsHoldingCircle, FaCircleUser,
 } from 'react-icons/fa6';

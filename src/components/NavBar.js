@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import {
-  Nav, Navbar, Offcanvas,
-} from 'react-bootstrap';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import logo from '../assets/logo.png';
 import pdf from '../data/resume.pdf';

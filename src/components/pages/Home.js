@@ -3,10 +3,10 @@ import {
   FaFacebookF, FaAngellist, FaGithub, FaArrowRightLong, FaArrowLeftLong,
   FaTwitter, FaLinkedinIn, FaRegEnvelope,
 } from 'react-icons/fa6';
-import {
-  Container, Row, Col,
-  Nav,
-} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
 import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
