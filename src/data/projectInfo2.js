@@ -1,9 +1,9 @@
-import spendigo from '../assets/spendigo.png';
-import recipe from '../assets/recipe.png';
-import blog from '../assets/blog.png';
-import catalog from '../assets/catalog.png';
-import medical from '../assets/medical.png';
-import vet from '../assets/vet.png';
+import spendigo from '../assets/spendigo.jpg';
+import recipe from '../assets/recipe.jpg';
+import blog from '../assets/blog.jpg';
+import catalog from '../assets/catalog.jpg';
+import medical from '../assets/medical.jpg';
+import vet from '../assets/vet.jpg';
 
 const projectInfo2 = [
   {
