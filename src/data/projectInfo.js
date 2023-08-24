@@ -1,14 +1,14 @@
-import appointDoctor from '../assets/appointDoctor.jpg';
-import nation from '../assets/nation.jpg';
-import math from '../assets/math.jpg';
-import leader from '../assets/leaderboard.jpg';
-import cms from '../assets/cms.jpg';
-import space from '../assets/space.jpg';
-import jscap from '../assets/jscap.jpg';
-import first from '../assets/first.jpg';
-import awesome from '../assets/awesome.jpg';
-import todo from '../assets/todo.jpg';
-import portfolio from '../assets/portfolio.jpg';
+import appointDoctor from '../assets/appointDoctor.webp';
+import nation from '../assets/nation.webp';
+import math from '../assets/math.webp';
+import leader from '../assets/leaderboard.webp';
+import cms from '../assets/cms.webp';
+import space from '../assets/space.webp';
+import jscap from '../assets/jscap.webp';
+import first from '../assets/first.webp';
+import awesome from '../assets/awesome.webp';
+import todo from '../assets/todo.webp';
+import portfolio from '../assets/portfolio.webp';
 
 const projectInfo = [
   {

@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Tippy from '@tippyjs/react';
 import story from '../../data/story';
-import photo from '../../assets/photo.jpg';
+import photo from '../../assets/photo.webp';
 import Footer from '../Footer';
 import '../../codebase.css';
 
