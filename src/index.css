@@ -154,22 +154,6 @@
   margin: 0.5rem !important;
 }
 
-.displayNone {
-  height: 1rem;
-  margin: 0 0 0.6rem;
-  border: solid 2px #e8e8e8;
-  background-color: var(--white-two);
-}
-
-.displayNoneCode p {
-  width: 1px;
-  visibility: hidden;
-}
-
-.displayNone p {
-  visibility: hidden;
-}
-
 .scrollable {
   max-height: 58vh;
   overflow-y: auto;

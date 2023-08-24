@@ -119,7 +119,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div id="project" className="project-cards-container container">
+      <div id="project" className="project-cards-container container ">
         <ProjectCards showSecondProjects={showSecondProjects} />
       </div>
       <div className=" container px-0 navigatebg">

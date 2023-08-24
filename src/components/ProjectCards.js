@@ -25,42 +25,44 @@ const ProjectCards = ({ showSecondProjects }) => {
   return (
     <>
 
-      <div className="projectCard">
+      <div className="projectCard ">
         {visibleProjects.map((project, index) => (
-          <div key={uuid()}>
-            <button
-              type="button"
-              className={`projectCardBtn ${showSecondProjects ? 'project-info-2' : 'project-info'} ${index % 2 === 0 ? 'even' : 'odd'}`}
-              onClick={() => openProjectModal(project)}
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="d-block w-100 h-100"
-              />
-              <h6>{project.title}</h6>
-              <p>
-                {project.description.substring(0, 50)}
-                ...
-              </p>
-              <ul className="techList d-flex flex-wrap justify-content-between">
-                {project.technologies.slice(0, 3).map((tech) => (
-                  <li key={uuid()} className="techStyle">
-                    {tech}
+          <Tippy key={uuid()} content="To See Details, Click on It">
+            <div key={uuid()}>
+              <button
+                type="button"
+                className={`projectCardBtn ${showSecondProjects ? 'project-info-2' : 'project-info'} ${index % 2 === 0 ? 'even' : 'odd'}`}
+                onClick={() => openProjectModal(project)}
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="d-block w-100 h-100"
+                />
+                <h6>{project.title}</h6>
+                <p>
+                  {project.description.substring(0, 50)}
+                  ...
+                </p>
+                <ul className="techList d-flex flex-wrap justify-content-between">
+                  {project.technologies.slice(0, 3).map((tech) => (
+                    <li key={uuid()} className="techStyle">
+                      {tech}
+                    </li>
+                  ))}
+                  {project.technologies.length > 3 && (
+                  <li className="techStyle">
+                    +
+                    {project.technologies.length - 3}
+                    {' '}
+                    more
                   </li>
-                ))}
-                {project.technologies.length > 3 && (
-                <li className="techStyle">
-                  +
-                  {project.technologies.length - 3}
-                  {' '}
-                  more
-                </li>
-                )}
-              </ul>
+                  )}
+                </ul>
 
-            </button>
-          </div>
+              </button>
+            </div>
+          </Tippy>
         ))}
 
         <Modal

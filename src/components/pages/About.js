@@ -7,7 +7,7 @@ import {
 } from 'react-bootstrap';
 import Tippy from '@tippyjs/react';
 import story from '../../data/story';
-import photo from '../../assets/photo.png';
+import photo from '../../assets/photo.jpg';
 import Footer from '../Footer';
 import '../../codebase.css';
 
