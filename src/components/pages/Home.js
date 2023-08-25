@@ -124,20 +124,20 @@ const Home = () => {
       </div>
       <div className=" container px-0 navigatebg">
         <div className="d-flex justify-content-between navigatepadding">
-          <a href="/about" rel="noopener noreferrer">
+          <Link to="/about" rel="noopener noreferrer">
             <button type="button" className="button modalBtn">
               <FaArrowLeftLong />
               {' '}
               About me
             </button>
-          </a>
-          <a href="/contact" rel="noopener noreferrer">
+          </Link>
+          <Link to="/contact">
             <button type="button" className="button modalBtn">
               Contact me
               {' '}
               <FaArrowRightLong />
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <Footer />
