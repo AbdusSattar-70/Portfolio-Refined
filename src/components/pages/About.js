@@ -179,9 +179,12 @@ const About = () => (
                       May 2023 - Present
                     </p>
                     <p>
-                      Ensuring the quality of source code and conducting code and UI reviews.
-                      Review codes written by software development students in GitHub.
-                      Evaluate code clarity, style, and best practices on project Pull Requests.
+                      ■ Enhance code quality by providing actionable recommendations resulting in a
+                      70% reduction in code-related issues.
+                    </p>
+                    <p>
+                      ■ Evaluate code clarity, style, and best practices on project Pull Requests,
+                      contributing to a 55% improvement in overall code readability.
                     </p>
                     <p>
                       <strong>
@@ -195,9 +198,12 @@ const About = () => (
                       January 2023 – Present
                     </p>
                     <p id="Mentor">
-                      Mentoring multiple junior web developers and providing technical support
-                      through many code reviews. Providing advice and tips on maintaining
-                      motivation to maintain longevity in the program.
+                      ■ Mentor a group of 25 junior web developers, offering technical and
+                      professional support through code reviews and Zoom calls.
+                    </p>
+                    <p>
+                      ■ Provide advice and tips for maintaining motivation and longevity in the
+                      program, resulting in a notable 95% increase in their program completion rate.
                     </p>
                     <p>
                       <strong>
@@ -211,11 +217,13 @@ const About = () => (
                       June 2008 – January 2020
                     </p>
                     <p>
-                      Filling my communication and problem-solving skills in a high-stress,
-                      fast-paced environment. Reduced time and cost on maintenance services by
-                      task prioritization and concise scheduling. I achieved the best employee
-                      award three times for maintaining a good customer relationship and
-                      technical skills.
+                      ■ Calmed individuals during blackouts and resolved 15-20 daily
+                      complaints using problem-solving and convincing skills.
+                    </p>
+                    <p>
+                      ■ Received the Best Employee award thrice for maintaining customer
+                      relationships, technical expertise, and consistently working without a weekly
+                      day off.
                     </p>
                   </div>
                 </div>
