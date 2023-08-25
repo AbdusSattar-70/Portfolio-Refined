@@ -45,7 +45,7 @@ const About = () => (
                       and dive into adventure films and chess games.
                       And here&apos;s the twist—I&apos;m all about sharing what I know,
                       whether it&apos;s
-                      <a href="/about#Mentor">
+                      <a href="/Portfolio-Refined/about#Mentor">
                         <span className="text-warning"> Mentoring </span>
                       </a>
                       or firing up positivity in the community.
@@ -53,15 +53,15 @@ const About = () => (
                     <p>
                       But hang on, This, my friends, is just a sneak peek! If you&apos;re curious
                       to know more about my
-                      <a href="/about#experience">
+                      <a href="/Portfolio-Refined/about#experience">
                         <span className="text-warning"> experiences </span>
                       </a>
                       ,
-                      <a href="/about#skills">
+                      <a href="/Portfolio-Refined/about#skills">
                         <span className="text-warning"> skills </span>
                       </a>
                       , and
-                      <a href="/about#story">
+                      <a href="/Portfolio-Refined/about#story">
                         <span className="text-warning"> stories </span>
                       </a>
                       ,

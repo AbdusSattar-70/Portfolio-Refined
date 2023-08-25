@@ -72,7 +72,7 @@ const NavBar = () => {
               />
             </Navbar.Brand>
             <Nav fill variant="tabs">
-              <Nav.Link as={NavLink} to="/Portfolio-Refined">
+              <Nav.Link as={NavLink} to="/">
                 Home
               </Nav.Link>
               <Nav.Link as={NavLink} to="/about" className="nav-link">
@@ -106,7 +106,7 @@ const NavBar = () => {
                   />
                 </Navbar.Brand>
                 <Nav fill variant="tabs" className="align-items-start customFontOffCanvas flex-column">
-                  <Nav.Link as={NavLink} to="/Portfolio-Refined" onClick={() => setShowOffcanvas(false)}>
+                  <Nav.Link as={NavLink} to="/" onClick={() => setShowOffcanvas(false)}>
                     Home
                   </Nav.Link>
                   <Nav.Link as={NavLink} to="/about" className="nav-link" onClick={() => setShowOffcanvas(false)}>

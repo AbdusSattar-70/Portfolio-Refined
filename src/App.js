@@ -9,10 +9,10 @@ import NavBar from './components/NavBar';
 const App = () => (
   <main>
     <section>
-      <Router>
+      <Router basename="/Portfolio-Refined">
         <NavBar />
         <Routes>
-          <Route path="/Portfolio-Refined" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
