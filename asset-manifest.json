@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio-Refined/static/css/main.e098c1e5.css",
-    "main.js": "/Portfolio-Refined/static/js/main.a2de9982.js",
+    "main.css": "/Portfolio-Refined/static/css/main.0a8fb4c3.css",
+    "main.js": "/Portfolio-Refined/static/js/main.4a394cd2.js",
     "static/media/resume.pdf": "/Portfolio-Refined/static/media/resume.64b410dead3d1eb85d96.pdf",
     "static/media/photo.webp": "/Portfolio-Refined/static/media/photo.83d9171f87c060dc03ad.webp",
     "static/media/nation.webp": "/Portfolio-Refined/static/media/nation.08f555434640c1b69162.webp",
     "static/media/blog.webp": "/Portfolio-Refined/static/media/blog.de94482c2cec6cbb87cb.webp",
     "static/media/recipe.webp": "/Portfolio-Refined/static/media/recipe.dcc2e9bd74e50ed5c81e.webp",
     "static/media/spendigo.webp": "/Portfolio-Refined/static/media/spendigo.7cc974d827826ccd9689.webp",
-    "static/media/logo.png": "/Portfolio-Refined/static/media/logo.a45844b661bc8b4375dc.png",
     "static/media/space.webp": "/Portfolio-Refined/static/media/space.de72cfde9a8d97240aaf.webp",
     "static/media/portfolio.webp": "/Portfolio-Refined/static/media/portfolio.863a0f803bc0c29a61f1.webp",
     "static/media/jscap.webp": "/Portfolio-Refined/static/media/jscap.5ecf111d6b7b80bde2b2.webp",
@@ -23,11 +22,11 @@
     "static/media/awesome.webp": "/Portfolio-Refined/static/media/awesome.32dab4465ac4b3a6bb0b.webp",
     "static/media/todo.webp": "/Portfolio-Refined/static/media/todo.6d607f425c7f3b8da60a.webp",
     "index.html": "/Portfolio-Refined/index.html",
-    "main.e098c1e5.css.map": "/Portfolio-Refined/static/css/main.e098c1e5.css.map",
-    "main.a2de9982.js.map": "/Portfolio-Refined/static/js/main.a2de9982.js.map"
+    "main.0a8fb4c3.css.map": "/Portfolio-Refined/static/css/main.0a8fb4c3.css.map",
+    "main.4a394cd2.js.map": "/Portfolio-Refined/static/js/main.4a394cd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e098c1e5.css",
-    "static/js/main.a2de9982.js"
+    "static/css/main.0a8fb4c3.css",
+    "static/js/main.4a394cd2.js"
   ]
 }
