@@ -27,7 +27,7 @@ const Home = () => {
                   <br />
                   I&apos;m
                   {' '}
-                  <span className="text-primary">
+                  <span className="text-warning">
                     {' '}
                     Abdus Sattar
                     {' '}
@@ -35,7 +35,7 @@ const Home = () => {
                   </span>
                 </h1>
 
-                <h4>I&apos;m a Software Engineer from Bangladesh</h4>
+                <p className="fs-4">I&apos;m a Software Engineer from Bangladesh</p>
                 <p>
                   I can help you build a product, feature, or
                   website. Look through
@@ -64,34 +64,34 @@ const Home = () => {
                 </p>
                 <div className="d-flex align-items-center justify-content-between p-3 social_media">
                   <Tippy content="Say Hello On Facebook">
-                    <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank">
+                    <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank" aria-label="Visit my Facebook profile">
                       <FaFacebookF className="iconSize" />
                     </Nav.Link>
                   </Tippy>
 
                   <Tippy content="Say Hello On LinkedIn">
-                    <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
+                    <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank" aria-label="Visit my LinkedIn profile">
                       <FaLinkedinIn className="iconSize" />
                     </Nav.Link>
                   </Tippy>
 
                   <Tippy content="Say Hello On Twitter">
-                    <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
+                    <Nav.Link href="https://twitter.com/Abdus_Sattar70" target="_blank" aria-label="Visit my Twitter profile">
                       <FaTwitter className="iconSize" />
                     </Nav.Link>
                   </Tippy>
                   <Tippy content="Say Hello On Wellfound">
-                    <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank">
+                    <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank" aria-label="Visit my Wellfound profile">
                       <FaAngellist className="iconSize" />
                     </Nav.Link>
                   </Tippy>
                   <Tippy content="Find Me On GitHub">
-                    <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank">
+                    <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank" aria-label="Visit my GitHub profile">
                       <FaGithub className="iconSize" />
                     </Nav.Link>
                   </Tippy>
                   <Tippy content="sasorganicagro@gmail.com">
-                    <a href="mailto:sasorganicagro@gmail.com">
+                    <a href="mailto:sasorganicagro@gmail.com" aria-label="Visit my gmail profile">
                       <FaRegEnvelope className="iconSize" />
                     </a>
                   </Tippy>
@@ -110,14 +110,16 @@ const Home = () => {
             Below, I showcase a blend of my recently deployed projects
             and console-based creations designed for learning and fun. Explore and enjoy!
           </p>
-          <button
-            type="button"
-            className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
-            onClick={() => setShowSecondProjects(!showSecondProjects)}
-          >
-            {showSecondProjects ? 'Toggle Deployed Only' : 'Toggle Console Only'}
-          </button>
         </div>
+      </div>
+      <div className="toggleProject container">
+        <button
+          type="button"
+          className={`button showprojectBtn ${showSecondProjects ? 'flipped' : ''}`}
+          onClick={() => setShowSecondProjects(!showSecondProjects)}
+        >
+          {showSecondProjects ? 'Toggle Deployed Only' : 'Toggle Console Only'}
+        </button>
       </div>
       <div id="project" className="project-cards-container container ">
         <ProjectCards showSecondProjects={showSecondProjects} />
