@@ -410,6 +410,14 @@
   color: var(--white-two);
 }
 
+.table tr,
+td,
+tbody,
+thead {
+  background-color: #242f9b !important;
+  color: var(--white-two) !important;
+}
+
 .navigatebg {
   background-color: #ea047e;
 }
