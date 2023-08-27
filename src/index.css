@@ -379,13 +379,13 @@
 .showprojectBtn {
   padding: 5px;
   font-size: 14px;
+  background-color: #242f9b;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
 .showprojectBtn.flipped {
   transform: rotateX(360deg);
-  background-color: #242f9b;
 }
 
 /* Home.css */

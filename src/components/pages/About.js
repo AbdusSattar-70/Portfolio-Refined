@@ -94,30 +94,30 @@ const About = () => (
                       <img src={photo} alt="Profile" className="img-fluid custom-photo" />
                       <div className="social-media-overlay">
                         <Tippy content="Say Hello On Facebook">
-                          <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank">
+                          <Nav.Link href="https://web.facebook.com/abdus.sattar.70/" target="_blank" aria-label="Visit my Facebook profile">
                             <FaFacebookF className="iconSize" />
                           </Nav.Link>
                         </Tippy>
 
                         <Tippy content="Say Hello On LinkedIn">
-                          <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
+                          <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank" aria-label="Visit my LinkedIn profile">
                             <FaLinkedinIn className="iconSize" />
                           </Nav.Link>
                         </Tippy>
 
                         <Tippy content="Say Hello On Twitter">
-                          <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank">
+                          <Nav.Link href="https://www.linkedin.com/in/abdus-sattar70/" target="_blank" aria-label="Visit my Twitter profile">
                             <FaTwitter className="iconSize" />
                           </Nav.Link>
                         </Tippy>
                         <Tippy content="Say Hello On Wellfound">
-                          <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank">
+                          <Nav.Link href="https://wellfound.com/u/abdus-sattar70" target="_blank" aria-label="Visit my Wellfound profile">
                             <FaAngellist className="iconSize" />
 
                           </Nav.Link>
                         </Tippy>
                         <Tippy content="Find Me On GitHub">
-                          <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank">
+                          <Nav.Link href="https://github.com/AbdusSattar-70/" target="_blank" aria-label="Visit my GitHub profile">
                             <FaGithub className="iconSize" />
                           </Nav.Link>
                         </Tippy>

@@ -45,12 +45,12 @@ const NavBar = () => {
             width="30"
             height="30"
             className="d-inline-block align-top logo"
-            alt="logo"
+            alt="Brand logo"
           />
         </Navbar.Brand>
       </div>
       <div className="nav-toggle-button">
-        <button type="button" className="humIcon" onClick={toggleOffcanvas}>
+        <button type="button" className="humIcon" aria-label="Toggle Navigation Menu" onClick={toggleOffcanvas}>
           {showOffcanvas ? <FaXmark /> : <FaBars />}
         </button>
       </div>
@@ -68,7 +68,7 @@ const NavBar = () => {
                 width="30"
                 height="30"
                 className="d-inline-block align-top logo"
-                alt="logo"
+                alt="Brand logo"
               />
             </Navbar.Brand>
             <Nav fill variant="tabs">
