@@ -13,6 +13,17 @@ import portfolio from '../assets/portfolio.webp';
 const projectInfo = [
   {
     id: 1,
+    title: 'Photo Gallery',
+    made: ' on November 2023',
+    collaborator: ['Sattar'],
+    description: 'Welcome to the Photo Gallery App! A fully responsive both mobile and desktop full-stack application built using React.js for the front-end and Node.js with Express.js for the back-end. It allows users to create and manage their photo galleries securely. This documentation provides insights into the project structure, key technologies used, and an overview of the application features....',
+    technologies: ['Rails', 'React', 'Redux', 'PostgreSQL', 'JavaScript', 'Bootstrap', 'API', 'Full-stack'],
+    image: 'https://github.com/AbdusSattar-70/photo_gallery/blob/dev/src/assets/screen.png',
+    link: 'https://effulgent-basbousa-67837a.netlify.app/',
+    github: 'https://github.com/AbdusSattar-70/photo_gallery',
+  },
+  {
+    id: 2,
     title: 'Appoint with a Doctor',
     made: ' on August 2023',
     collaborator: ['Lengushuru', 'Enoch', 'Daniel', 'Tracy', 'Sattar'],
@@ -24,7 +35,7 @@ const projectInfo = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: 'Nation Navigator',
     made: 'on April 2023',
     collaborator: ['Abdus Sattar'],
@@ -35,7 +46,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Nation-Navigator',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Math-Magicians',
     made: 'on April 2023',
     collaborator: ['Santosh Konappanavar', 'Abdus Sattar'],
@@ -46,7 +57,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Math-Magicians',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Leaderboard',
     made: 'on March 2023',
     collaborator: ['Abdus Sattar'],
@@ -57,7 +68,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Leaderboard',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Bookstore CMS',
     made: 'on March 2023',
     collaborator: ['Abdus Sattar'],
@@ -68,7 +79,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Bookstore-with-react',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Space Travelers Hub',
     made: 'on March 2023',
     collaborator: ['lengushuru charles', 'Abdus Sattar'],
@@ -79,7 +90,7 @@ const projectInfo = [
     github: 'https://github.com/lengushuru/Space-Travelers-Hub',
   },
   {
-    id: 7,
+    id: 8,
     title: 'JavaScript Capstone',
     made: 'on March 2023',
     collaborator: ['Kevin Toro', 'Abdus Sattar'],
@@ -90,7 +101,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Javascript-Capstone',
   },
   {
-    id: 8,
+    id: 9,
     title: 'First Capstone',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -101,7 +112,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Awesome Book',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -112,7 +123,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Awesome-Book-ES6',
   },
   {
-    id: 10,
+    id: 11,
     title: 'To Do List',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -123,7 +134,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
-    id: 11,
+    id: 12,
     title: 'Portfolio',
     made: 'on January 2023',
     collaborator: ['Mehmet Selçuk Güler', 'Santosh Konappanavar', 'Sonika Kumar', 'Abdus Sattar'],
