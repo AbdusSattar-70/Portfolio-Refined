@@ -9,21 +9,22 @@ import first from '../assets/first.webp';
 import awesome from '../assets/awesome.webp';
 import todo from '../assets/todo.webp';
 import portfolio from '../assets/portfolio.webp';
+import mingleMate from '../assets/mingleMate.png';
 
 const projectInfo = [
   {
     id: 1,
-    title: 'Photo Gallery',
-    made: ' on November 2023',
+    title: 'MingleMate',
+    made: ' on January 2024',
     collaborator: ['Sattar'],
-    description: 'Welcome to the Photo Gallery App! A fully responsive both mobile and desktop full-stack application built using React.js for the front-end and Node.js with Express.js for the back-end. It allows users to create and manage their photo galleries securely. This documentation provides insights into the project structure, key technologies used, and an overview of the application features....',
-    technologies: ['Rails', 'React', 'Redux', 'PostgreSQL', 'JavaScript', 'Bootstrap', 'API', 'Full-stack'],
-    image: 'https://github.com/AbdusSattar-70/photo_gallery/blob/dev/src/assets/screen.png',
-    link: 'https://effulgent-basbousa-67837a.netlify.app/',
-    github: 'https://github.com/AbdusSattar-70/photo_gallery',
+    description: 'MingleMate is a mobile-first, responsive web application designed for efficient collection management. Catering to both non-authenticated and authenticated users, MingleMate ensures a seamless experience while maintaining privacy and access controls....',
+    technologies: ['TypeScript', 'Tailwind', 'Rails', 'React', 'PostgreSQL', 'API', 'Full-stack'],
+    image: mingleMate,
+    link: 'https://mingle-mate.vercel.app/',
+    github: 'https://github.com/AbdusSattar-70/MingleMate_client',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Appoint with a Doctor',
     made: ' on August 2023',
     collaborator: ['Lengushuru', 'Enoch', 'Daniel', 'Tracy', 'Sattar'],
@@ -35,7 +36,7 @@ const projectInfo = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: 'Nation Navigator',
     made: 'on April 2023',
     collaborator: ['Abdus Sattar'],
@@ -46,7 +47,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Nation-Navigator',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Math-Magicians',
     made: 'on April 2023',
     collaborator: ['Santosh Konappanavar', 'Abdus Sattar'],
@@ -57,7 +58,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Math-Magicians',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Leaderboard',
     made: 'on March 2023',
     collaborator: ['Abdus Sattar'],
@@ -68,7 +69,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Leaderboard',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Bookstore CMS',
     made: 'on March 2023',
     collaborator: ['Abdus Sattar'],
@@ -79,7 +80,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Bookstore-with-react',
   },
   {
-    id: 7,
+    id: 9,
     title: 'Space Travelers Hub',
     made: 'on March 2023',
     collaborator: ['lengushuru charles', 'Abdus Sattar'],
@@ -90,7 +91,7 @@ const projectInfo = [
     github: 'https://github.com/lengushuru/Space-Travelers-Hub',
   },
   {
-    id: 8,
+    id: 10,
     title: 'JavaScript Capstone',
     made: 'on March 2023',
     collaborator: ['Kevin Toro', 'Abdus Sattar'],
@@ -101,7 +102,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Javascript-Capstone',
   },
   {
-    id: 9,
+    id: 11,
     title: 'First Capstone',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -112,7 +113,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/FirstCapstone',
   },
   {
-    id: 10,
+    id: 12,
     title: 'Awesome Book',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -123,7 +124,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/Awesome-Book-ES6',
   },
   {
-    id: 11,
+    id: 13,
     title: 'To Do List',
     made: 'on February 2023',
     collaborator: ['Abdus Sattar'],
@@ -134,7 +135,7 @@ const projectInfo = [
     github: 'https://github.com/AbdusSattar-70/To-Do-List',
   },
   {
-    id: 12,
+    id: 14,
     title: 'Portfolio',
     made: 'on January 2023',
     collaborator: ['Mehmet Selçuk Güler', 'Santosh Konappanavar', 'Sonika Kumar', 'Abdus Sattar'],
