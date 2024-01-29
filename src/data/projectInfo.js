@@ -10,6 +10,7 @@ import awesome from '../assets/awesome.webp';
 import todo from '../assets/todo.webp';
 import portfolio from '../assets/portfolio.webp';
 import mingleMate from '../assets/mingleMate.png';
+import collabcanvas from '../assets/collabCanvas.png';
 
 const projectInfo = [
   {
@@ -22,6 +23,17 @@ const projectInfo = [
     image: mingleMate,
     link: 'https://mingle-mate.vercel.app/',
     github: 'https://github.com/AbdusSattar-70/MingleMate_client',
+  },
+  {
+    id: 2,
+    title: 'CollabCanvas',
+    made: ' on december 2023',
+    collaborator: ['Sattar'],
+    description: ' A web application resembling a collaborative drawing board, similar to Google Jamboard. Users can access the boards without registration or authentication, using arbitrary nicknames. Each user can either create a new board or join existing ones, allowing multiple users to draw simultaneously. Changes are visible in real-time to others, with drawn elements persisting indefinitely....',
+    technologies: ['WebSocket', 'Tailwind', 'Node.js', 'React', 'Mongodb', 'Express.js', 'Full-stack'],
+    image: collabcanvas,
+    link: 'https://collabcanvas-client.onrender.com/',
+    github: 'https://github.com/AbdusSattar-70/CollabCanvas_client',
   },
   {
     id: 4,
