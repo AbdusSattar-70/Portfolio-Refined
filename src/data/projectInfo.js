@@ -30,7 +30,7 @@ const projectInfo = [
     made: ' on december 2023',
     collaborator: ['Sattar'],
     description: ' A web application resembling a collaborative drawing board, similar to Google Jamboard. Users can access the boards without registration or authentication, using arbitrary nicknames. Each user can either create a new board or join existing ones, allowing multiple users to draw simultaneously. Changes are visible in real-time to others, with drawn elements persisting indefinitely....',
-    technologies: ['WebSocket', 'Tailwind', 'Node.js', 'React', 'Mongodb', 'Express.js', 'Full-stack'],
+    technologies: ['WebSocket', 'React', 'Node', 'Tailwind', 'Mongodb', 'Express.js', 'Full-stack'],
     image: collabcanvas,
     link: 'https://collabcanvas-client.onrender.com/',
     github: 'https://github.com/AbdusSattar-70/CollabCanvas_client',
